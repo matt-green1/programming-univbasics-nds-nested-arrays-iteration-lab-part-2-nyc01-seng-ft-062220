@@ -3,9 +3,8 @@ def find_min_in_nested_arrays(src)
   row_index = 0
   while row_index < src.count do
     element_count = 0
-   
+    lowest_int = 300
     while element_count < src[row_index].count do
-      lowest_int = 300
       if src[row_index][element_count] < lowest_int
         lowest_int = src[row_index][element_count]
         weekly_minimums.push(lowest_int)
