@@ -7,7 +7,6 @@ def find_min_in_nested_arrays(src)
     while element_count < src[row_index].count do
       if src[row_index][element_count] < lowest_int
         lowest_int = src[row_index][element_count]
-        puts lowest_int
         weekly_minimums.push(lowest_int)
       end
     element_count += 1
